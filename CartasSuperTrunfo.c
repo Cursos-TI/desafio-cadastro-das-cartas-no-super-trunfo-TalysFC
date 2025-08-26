@@ -2,7 +2,7 @@
 
 
 int main(){ //variaveis utilizadas no código
-    printf("Desafio Super Trunfo Países: Novato! \n");
+    printf("Desafio Super Trunfo Países: Aventureiro! \n");
 
     char estado1, estado2; 
     char codigo1[4], codigo2[4];
@@ -13,6 +13,10 @@ int main(){ //variaveis utilizadas no código
     int pontos1, pontos2;
 
 
+    float densidade1, densidade2; //criação das variáveis do nível aventureiro
+    float pibpercapita1, pibpercapita2;
+
+    
     printf("\nPara começar, vamos criar sua primeira carta! \n"); //criação primeira carta do usuário
     
     printf("Digite uma letra de A a H: \n");
@@ -59,7 +63,13 @@ int main(){ //variaveis utilizadas no código
 
     printf("Quantos pontos turísticos essa cidade possui? \n");
     scanf(" %d", &pontos2); //fim segunda carta
+    
+    
+    densidade1 = (float) populacao1 / area1; //operação das variáveis usando casting
+    densidade2 = (float) populacao2 / area2;
 
+    pibpercapita1 = (float) pib1 / populacao1;
+    pibpercapita2 = (float) pib2 / populacao2;
 
     printf("\nPronto, aqui estão suas cartas para jogar: \n"); //apresentação das duas cartas
 
@@ -70,7 +80,9 @@ int main(){ //variaveis utilizadas no código
     printf("Habitantes: %d pessoas. \n", populacao1);
     printf("Área: %.2f km². \n", area1);
     printf("PIB: R$%.2f. \n", pib1);
-    printf("Pontos turísticos: %d. \n", pontos1);
+    printf("Pontos Turísticos: %d. \n", pontos1);
+    printf("Densidade Populacional: %.3f hab/km². \n", densidade1); //novas informações exibidas na carta 1
+    printf("PIB per Capita: R$%.3f. \n", pibpercapita1);
 
     printf("\nCarta 2: \n"); //apresentação segunda carta
     printf("Estado: %c. \n", estado2);
@@ -80,6 +92,8 @@ int main(){ //variaveis utilizadas no código
     printf("Área: %.2f km². \n", area2);
     printf("PIB: R$%.2f. \n", pib2);
     printf("Pontos turísticos: %d. \n", pontos2);
+    printf("Densidade Populacional: %.3f hab/km². \n", densidade2); //novas informações exibidas na carta 2
+    printf("PIB per Capita: R$%.3f. \n", pibpercapita2);
 
 
     return 0;
