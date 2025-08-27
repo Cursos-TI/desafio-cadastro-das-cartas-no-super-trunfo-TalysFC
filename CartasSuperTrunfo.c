@@ -2,7 +2,7 @@
 
 
 int main(){ //variaveis utilizadas no código
-    printf("Desafio Super Trunfo Países: Aventureiro! \n");
+    printf("Desafio Super Trunfo Países: Mestre! \n");
 
     char estado1, estado2; 
     char codigo1[4], codigo2[4];
