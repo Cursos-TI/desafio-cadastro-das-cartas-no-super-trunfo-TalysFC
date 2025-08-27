@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 
-int main(){ //variaveis utilizadas no código
+int main(){
     printf("Desafio Super Trunfo Países: Mestre! \n");
 
-    char estado1, estado2; 
+    char estado1, estado2; //variaveis utilizadas no código
     char codigo1[4], codigo2[4];
     char nome1[50], nome2[50];
     unsigned long int populacao1, populacao2; //alteração do tipo da variável (mestre)
